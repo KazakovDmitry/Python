@@ -9,7 +9,7 @@
 # 385916 -> yes
 # 123456 -> no
 
-number = input("Введите 6-значное число: ")  # По умолчанию, значение принимается в строку.
+number = input("Введите 6-значное число: ")
 resultLeft = 0
 resultRight = 0
 
@@ -20,6 +20,6 @@ for j in number[3:6]:  # [3;6)
     resultRight += int(j)
 
 if resultLeft == resultRight:
-    print("YES, билетик счастливый - можно съесть!")
+    print("YES, билет счастливый ")
 else:
-    print("NO, повезёт в другой раз..")
+    print("NO, не повезло")
