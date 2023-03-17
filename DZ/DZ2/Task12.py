@@ -8,12 +8,15 @@
 # x*y=p  y=p/x
 
 s = int(input("Сумма чисел X и Y: "))
-p = int(input("Сумма чисел X и Y: "))
-
-for x in range(1, 1001):
+p = int(input("Произведение чисел X и Y: "))
+y = 0
+x = 0
+while y != s - x:
+    x += 1
     if p % x == 0:
         y = int (p / x)
         if y == s - x:
-            print(x, y)
-else:
+            print(f"Это числа {x} и {y}")
+
+if y != s - x:
     print("Решения нет")

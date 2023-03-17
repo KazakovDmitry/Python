@@ -4,19 +4,19 @@
 # Выведите минимальное количество монет, которые нужно перевернуть
 
 from random import randint
-n = int(input("введите количество монеток: "))
+n = int(input("Введите количество монеток: "))
 orel = 0
 reshka = 0
-while n>0:
-    a = randint(0,1)
+while n > 0:
+    a = randint(0, 1)
     print(a, end=' ')
     if a == 0:
         orel += 1
     else:
         reshka += 1
-    n-=1
+    n -= 1
 print()
 if orel < reshka:
-    print(f"Минимальное количество монет {orel}")
+    print(f"Минимальное количество монет - {orel}")
 else:
-    print(f"Минимальное количество монет, {reshka}")
+    print(f"Минимальное количество монет - {reshka}")
