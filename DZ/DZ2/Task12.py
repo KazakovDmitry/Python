@@ -11,7 +11,7 @@ s = int(input("Сумма чисел X и Y: "))
 p = int(input("Произведение чисел X и Y: "))
 y = 0
 x = 0
-while y != s - x:
+while y != s - x and x < s:
     x += 1
     if p % x == 0:
         y = int (p / x)
