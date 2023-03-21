@@ -30,7 +30,7 @@ flag = True
 while flag:
     a = input("Введите выбор Тимура, указав одно из значений:\n"
               "'камень', 'ножницы', 'бумага', 'ящерица' или 'Спок': ")
-    if a.lower() in options[0:3]:
+    if a.lower() in options[0:4]:
         a = a.lower()
         flag = False
     elif a.capitalize() in options[4]:
