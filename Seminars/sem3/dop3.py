@@ -36,27 +36,25 @@ target = 'anton'
 
 for i in range(quantity):
     word_1 = ''
-    for j in range(randint(10, 19)):  # randint[] range[) randint(5,99)
+    for j in range(randint(10, 19)):  
         word_1 += dict[randint(0, len(dict) - 1)]
     line_1.append(word_1)
 
 print(line_1)
-find = ""
 
 word_number = 0
 
-for i in line_1:
-    # for word in line_1:
+for word in line_1:
     find = ""
     char = 0
     for j in target:
-        while char < len(i):
-            if i[char] == j:
-                find += i[char]
+        while char < len(word):
+            if word[char] == j:
+                find += word[char]
                 char += 1
                 break
             char += 1
-        # break
+
     if find == target:
         print(f"Номер слова: {word_number + 1}")
     word_number += 1
