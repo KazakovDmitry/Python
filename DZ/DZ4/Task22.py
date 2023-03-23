@@ -13,9 +13,9 @@ b = int(input("Введите количество чисел во втором 
 list_a = []
 list_b = []
 for i in range(a):
-    list_a.append(randint(1, 20))
+    list_a.append(randint(1, 10))
 for i in range(b):
-    list_b.insert(i, randint(1, 20))
+    list_b.insert(i, randint(1, 10))
 print(*list_a)
 print(*list_b)
 set_a = set(list_a)
@@ -39,5 +39,7 @@ for i in range(len(list_i)-1):
     for j in range(i+1, len(list_i)):
         if list_i[j] < list_i[i]:
             list_i.insert(i, list_i.pop(j))
+
+# result.sort()
             
 print('Общие элементы по возрастанию:', *list_i)
