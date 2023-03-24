@@ -27,14 +27,6 @@ set_b = set(list_b)
 list_i = list(set_a.intersection(set_b))
 print(list_i)
 
-# for i in range(len(list_i)-1):
-#     for j in range(i+1, len(list_i)):
-#         if list_i[j] < list_i[i]:
-#             temp = list_i[i]
-#             list_i[i] = list_i[j]
-#             list_i[j] = temp
-# print(*list_i)
-
 for i in range(len(list_i)-1):
     for j in range(i+1, len(list_i)):
         if list_i[j] < list_i[i]:

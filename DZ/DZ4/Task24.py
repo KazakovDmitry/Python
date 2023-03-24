@@ -14,9 +14,9 @@ n = int(input("Введите количество кустов: "))
 list_a = [randint(1, 19) for i in range(n)]
 print(*list_a)
 
-max = 0
+max_1 = 0
 for i in range(len(list_a)):
     sum_1 = list_a[i] + list_a[i - 1] + list_a[i - 2]
-    if sum_1 > max:
-       max = sum_1
-print('Максимальное число ягод', max)
+    if sum_1 > max_1:
+       max_1 = sum_1
+print('Максимальное число ягод', max_1)
