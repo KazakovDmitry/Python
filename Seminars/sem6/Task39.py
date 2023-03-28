@@ -38,13 +38,13 @@ while i < len(list_n):
 
 print(list_n)
 
-def find_repeat_element(a, b, i = 0): 
+def find_repeat_element(a, b, i = 0):
     if i < len(a):
         if len(b) <= 1:
             if b[0] == a[0]:
                 a.pop(0)            
             return a
-        return find_repeat_element(a, b[1:], i = 0)
-    return find_repeat_element(a, b, i = i + 1)
+        return find_repeat_element(a, b[1:], 0)
+    return find_repeat_element(a, b, i + 1)
 
 print('рекурсия:', find_repeat_element(list_n, list_m))
