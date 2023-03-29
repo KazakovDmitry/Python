@@ -9,11 +9,11 @@
 # Вывод: 220 284
 
 def find_summ_delitel(num):
-    delitel = []
+    # delitel = []
     summ = 0
     for i in range(1, num // 2 + 1):
         if num % i == 0:
-            delitel.append(i)
+            # delitel.append(i)
             summ += i
     return summ
 
@@ -22,8 +22,8 @@ k = int(input("Введите натуральное число: "))
 friends_numbers = {}
 for i in range(1, k):
     m = find_summ_delitel(i)
-    if find_summ_delitel(m) == i and i != m:
-            friends_numbers[i] = m
+    if find_summ_delitel(m) == i and i != m and m not in friends_numbers.keys():
+        friends_numbers[i] = m
 
 print(friends_numbers)
 
