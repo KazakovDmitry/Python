@@ -31,3 +31,11 @@ s = lambda a, b: pi * a * b
 a, b = 2, 4
 list1 = map(s, a, b)
 print(list1)
+
+orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+print(orbits)
+orbits = list(filter(lambda x: x[0] != x[1], orbits))  # Оставляем в списке только отфильтрованные значения.
+print(orbits)
+
+result = max(orbits, key=lambda x: x[0] * x[1])  # key - необязательный параметр функции max.
+print(result)
