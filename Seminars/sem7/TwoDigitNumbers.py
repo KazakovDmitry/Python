@@ -4,16 +4,16 @@
 # Результат отобразить на экране в виде последовательности оставшихся чисел в 
 # одну строчку через пробел.
 
-# 23 345 567 1
+# 23 345 567 12
 
 # print(*list(filter(lambda x: len(x) == 2, input("Введите текст: ").split())))
 
 
-list_1 = "23 345 567 1".split()
+list_1 = "23 345 567 12".split()
 print(list_1)
 
 list_1 = list(map(lambda x: int(x),list_1))
 print(list_1)
 
 list_1 = list(filter(lambda x: 9<x<100, list_1))
-print(list_1)
+print(*list_1)

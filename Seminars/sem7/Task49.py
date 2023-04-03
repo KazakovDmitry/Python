@@ -22,15 +22,15 @@
 # Вывод:
 # 2.5 10
 
-from math import pi
-orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-a = 1
-b = 1
-s = lambda a, b: pi * a * b
-# for i in orbits:
-a, b = 2, 4
-list1 = map(s, a, b)
-print(list1)
+# from math import pi
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# a = 1
+# b = 1
+# s = lambda a, b: pi * a * b
+# # for i in orbits:
+# a, b = 2, 4
+# list1 = map(s, a, b)
+# print(list1)
 
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
 print(orbits)

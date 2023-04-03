@@ -15,7 +15,7 @@
 # ok
 
 # Функция
-trasformation = lambda values: values
+trasformation = lambda x: x
 
 #Ввод:
 values = [1, 23, 42, 'asdfg']
@@ -26,5 +26,3 @@ if values == transformed_values:
 else:
  print('fail')
 
-# Функция
-trasformation = lambda values: values
