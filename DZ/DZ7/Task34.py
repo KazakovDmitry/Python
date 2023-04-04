@@ -15,19 +15,11 @@ stih = "пара-ра-рам рам-пам-папам па-ра-па-дам"
 stih = list(stih.split())
 print(stih)
 glasnie = ['а', 'у', 'е', 'ы', 'о', 'э', 'я', 'и', 'ю', 'ё']
-# slog = []
-# for slovo in stih:
-#     count = 0
-#     for i in slovo:        
-#         if i in glasnie:
-#             count += 1
-#     slog.append(count)
 
 slog = []
 for slovo in stih:
     count = len(list(filter(lambda i: i in glasnie, slovo)))
     slog.append(count)
-# print(slog)
 
 count = 0
 for i in range(len(slog)):
