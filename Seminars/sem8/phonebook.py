@@ -121,15 +121,18 @@ def add_abonent(data):
     input("Для продолжения нажмите клавишу Enter")
 
 def save_spravochnik(data):
-    with open(input("Введите имя файла: "), 'w', encoding='utf-8') as new_file:
-        for el in data:
-            for k, v in el.items():
-                new_file.write(f'{k}: {v}\n')
-            new_file.write("\n")
-    print("Справочник сохранен") 
+    with open("phon.txt", 'w', encoding='utf-8') as new_file:
+        for i in data:
+            str_i = ""
+            for v in i.values():
+                str_i += v + ","
+            str_i = str_i[:-1]
+            new_file.write(str_i + "\n")
+    print("Справочник сохранен")
+    input("Для продолжения нажмите клавишу Enter")
 
 
-spravochnik = read_csv("Python\Seminars\sem8\phonebook.csv")
+spravochnik = read_csv("phonebook.csv")
 
 choise = 0
 while choise != 6:
