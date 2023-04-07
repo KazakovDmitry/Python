@@ -50,7 +50,7 @@ def find_abonent_family(data):
     index = 0
     find_abonent = []
     for el in data:
-        if family in el['Фамилия']: # Ищет частичное или полное совпадение фамилии
+        if family in el['Фамилия']: # Ищет частичное или полное совпадение фамилии for el[] == family
             count += 1
             find_abonent.append(el)
             print(count, "найденный абонент:")
@@ -58,8 +58,8 @@ def find_abonent_family(data):
                 print(f'{k}: {v}')
             print()
     if count > 1:
-        index = int(input("Найдено несколько абонентов\n"
-                          "Если не хотите ничего делать нажмите 0\n"
+        index = int(input("Найдено несколько абонентов\n"               
+                          "Если не хотите ничего делать нажмите 0\n"   
                           "Если хотите изменить абонента, напишите номер найденного: "))
         if index > 0:
             count = 1
@@ -121,7 +121,7 @@ def add_abonent(data):
     input("Для продолжения нажмите клавишу Enter")
 
 def save_spravochnik(data):
-    with open("phon.txt", 'w', encoding='utf-8') as new_file:
+    with open(input("Введите имя файла: "), 'w', encoding='utf-8') as new_file:
         for i in data:
             str_i = ""
             for v in i.values():
